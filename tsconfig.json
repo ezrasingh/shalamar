@@ -18,8 +18,16 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* Paths */
+    "paths": {
+      "@engine": ["./packages/engine"],
+      "@engine/*": ["./packages/engine/*"],
+      "@editor": ["./packages/editor"],
+      "@editor/*": ["./packages/editor/*"],
+    }
   },
-  "include": ["src"],
+  "include": ["packages", "src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
