@@ -1,7 +1,7 @@
 import cx from "classnames";
 import { useCallback, useMemo } from "react";
 import { NodeModel, NodeRender, Tree } from "@minoru/react-dnd-treeview";
-import { useEngine } from "@engine/store";
+import { useEngine } from "@engine/services/store";
 import { useProjectEditor } from "../store";
 import { NodeClosedIcon, NodeOpenedIcon } from "@editor/common/icons";
 import { GraphNode, GraphNodeProps } from "../components";

@@ -37,7 +37,7 @@ export const ResourceGroup: React.FC<ResourceGroupProps> = ({
           <span className="capitalize">no {title}</span>
         </div>
       );
-    return entries.map(([name, data]) => (
+    return entries.map(([name /*, data */]) => (
       <div
         key={name}
         className="card card-side outline bg-base-400 shadow-xl w-1/4"

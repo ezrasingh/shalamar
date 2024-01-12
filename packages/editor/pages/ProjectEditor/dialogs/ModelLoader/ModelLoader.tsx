@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import { Loading } from "@editor/common/components";
 import { Dialog } from "@editor/pages/ProjectEditor/blocks";
 import { EmptyState, ModelPreview } from "./partials";
-import { useEngine } from "@engine/store";
+import { useEngine } from "@engine/services/store";
 import { useModelLoader } from "./store";
 
 export const ModelLoader = () => {

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useFrame } from "@react-three/fiber";
+//import { useFrame } from "@react-three/fiber";
 import { Group, Intersection, Object3D } from "three";
 import { useEngine } from "../services/store";
 
@@ -20,13 +20,13 @@ export function useSystem(
     if (sceneRef?.current) engine.bindScene(sceneRef.current);
   }, [sceneRef, engine]);
 
-  useFrame(({ clock, scene: globalScene }) => {
-    const timeDelta = clock.getDelta();
-    // ? for(const [objectId, updateHandler] of state.systems.update.entries()){
-    // ?  const object = scene.getObjectById(objectId);
-    // ?  if(object) updateHandler(object, timeDelta, { clock, scene });
-    // ? }
-  });
+  // useFrame(({ clock, scene: globalScene }) => {
+  //   // const timeDelta = clock.getDelta();
+  //   // ? for(const [objectId, updateHandler] of state.systems.update.entries()){
+  //   // ?  const object = scene.getObjectById(objectId);
+  //   // ?  if(object) updateHandler(object, timeDelta, { clock, scene });
+  //   // ? }
+  // });
 
   return {
     onClick(object: Object3D) {

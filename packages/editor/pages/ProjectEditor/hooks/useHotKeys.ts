@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import { useCallback, useEffect } from "react";
 import { Key } from "ts-key-enum";
-import { useEngine } from "@engine/store";
+import { useEngine } from "@engine/services/store";
 import { useProjectEditor } from "../store";
 import { DialogKey } from "../dialogs";
 

@@ -1,6 +1,6 @@
 import { Dialog } from "@editor/pages/ProjectEditor/blocks";
 import { Builder } from "./partials";
-import { useEngine } from "@engine/store";
+import { useEngine } from "@engine/services/store";
 import { useLightingBuilder } from "./store";
 
 export const LightingBuilder = () => {

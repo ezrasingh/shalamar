@@ -1,3 +1,3 @@
 import React from "react";
 
-export default React.lazy(() => import("./MeshBuilder"));
+export default React.lazy(() => import("./LightingBuilder"));
