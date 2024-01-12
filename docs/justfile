@@ -1,0 +1,6 @@
+default:
+        @just --list
+
+# view mdbook
+run:
+    mdbook serve --open

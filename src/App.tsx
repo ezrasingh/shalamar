@@ -1,6 +1,6 @@
-import Example from './examples/editor';
+import { EditorDemo } from './examples/EditorDemo';
 
 
-const App = () => <Example />;
+const App = () => <EditorDemo />;
 
 export default App
